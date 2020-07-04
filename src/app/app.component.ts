@@ -9,9 +9,3 @@ import { title } from 'process';
 export class AppComponent {
   title = 'home';
 }
-export declare class MatCardModule {
-  constructor(parameters) {
-   
-  }
-}
-
