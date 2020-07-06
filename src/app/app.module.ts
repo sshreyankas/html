@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { ProfileStudentComponent } from './profile-student/profile-student.component';
 import { ResultImportComponent } from './result-import/result-import.component';
 import { ResultDisplayComponent } from './result-display/result-display.component'
+import {MatInputModule} from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +26,10 @@ import { ResultDisplayComponent } from './result-display/result-display.componen
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatInputModule,
+    MatDialogModule,
+    MatButtonModule
     
   ],
   providers: [],

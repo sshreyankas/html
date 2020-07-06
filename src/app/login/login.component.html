@@ -1,42 +1,15 @@
-<div class="dimen">
 
-    <b style="position: absolute; left: 85px; font-size: 25px; color: rgb(185, 22, 22);">WELCOME BACK!!</b>
-    <b style="position: absolute; left: 160px; font-size: 25px;top: 30px; color: rgb(30, 30, 136);">Login</b>
+<form class="example-form">
+  <mat-label style="text-align: center; margin-left: 35%;">WELCOME BACK!!</mat-label><br>
+  <mat-form-field class="example-full-width">
+    <mat-label>Email Address</mat-label>
+    <input matInput placeholder="Ex. xyz@gmail.com" type="email" required>
+  </mat-form-field>
 
-    <hr class="line">
+  <mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" required>
+  </mat-form-field>
+  <button mat-raised-button style="margin-left: 40%;">Login</button>
     
-  <div class="details">
-
-    <br>
-        <label for="email" >Email Address</label>
-    <br>
-        <input type="email" name="email" id="email">
-    <br>
-    <br>
-        <label for="pwd" >Password</label>
-    <br>
-        <input type="password" name="pwd" id="pwd">
-    <br>
-    <input type="submit" value="Login" class="login">
-    
-  </div>
-
-  <div class="gmail">
-    <b style="font-size: 20px; margin-left: 30px;">OR</b>
-
-    <a href="#" class="fb btn">
-         Login with Facebook
-      </a>
-      
-      <a href="#" class="google btn">
-         Login with Google+
-      </a>
-  </div>
-  <div class="already">
-    Don't have account? Go to 
-    <a href="signup.html" >
-      SignUp
-   </a>
-  </div>
-  
-  </div>  
+ </form>
