@@ -12,6 +12,8 @@ import { ResultDisplayComponent } from './result-display/result-display.componen
 import {MatInputModule} from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
+import {DetailsService} from './details.service';
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,10 +31,11 @@ import {MatButtonModule} from '@angular/material/button';
     MatCardModule,
     MatInputModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
     
   ],
-  providers: [],
+  providers: [DetailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
