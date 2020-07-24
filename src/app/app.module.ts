@@ -13,7 +13,9 @@ import {MatInputModule} from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import {DetailsService} from './details.service';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HttpClientJsonpModule} from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,8 @@ import {HttpClientModule} from '@angular/common/http';
     MatInputModule,
     MatDialogModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpClientJsonpModule
     
   ],
   providers: [DetailsService],

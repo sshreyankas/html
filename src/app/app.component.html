@@ -1,17 +1,21 @@
-<!-- <div class="row">
-  <div class="col-sm-3 col-xs-3 col-lg-3 col-md-3" >
-      <img src="assets/logo.png" style="width: 100px; height: 100px;" class="resp" >
-     
-  </div>
-  <div class="col-sm-9 col-xs-9 col-lg-9 col-md-9">
-    <span style="font-weight: bold;font-size: 20px;">MKSSS's Cummins College Of Engineering For Women,Pune</span>   
-  </div>
+<div class="row" style="background-color: blue;">
+  <span class="image" style="position: relative;">
+    <img src="assets/logo.png" style="width: 100px; height: 100px;" class="resp" >
+  </span>
+  <span class="cummins">MKSSS's Cummins College Of Engineering For Women,Pune</span>   
+</div>
+<br>
 
-</div> -->
+<!-- <input type="file" (change)="onFileChange($event)" multiple="false"> -->
 
-<p>Pleass!!</p>
-<tr *ngFor="let sub of subject">
-<td>{{sub.cno}}</td>
-<td>{{sub.batch}}</td>
-</tr>
-<!-- <router-outlet></router-outlet> -->
+]<ul *ngFor="let sub of subject">
+  <li>{{sub.subject}}</li>
+  <li>{{sub.cno}}</li>
+  <li>{{sub.t1}}</li>
+  <li>{{sub.t2}}</li>  
+  <li>{{sub.end}}</li>
+  <li>{{sub.batch}}</li>
+</ul>
+
+
+<router-outlet></router-outlet>
