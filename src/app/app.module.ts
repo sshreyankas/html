@@ -14,6 +14,11 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import {DetailsService} from './details.service';
 import {HttpClientModule, HttpClientJsonpModule} from '@angular/common/http';
+// import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginStaffComponent } from './login-staff/login-staff.component';
+import { LoginAdminComponent } from './login-admin/login-admin.component';  
+
 
 
 @NgModule({
@@ -24,7 +29,9 @@ import {HttpClientModule, HttpClientJsonpModule} from '@angular/common/http';
     HomeComponent,
     ProfileStudentComponent,
     ResultImportComponent,
-    ResultDisplayComponent
+    ResultDisplayComponent,
+    LoginStaffComponent,
+    LoginAdminComponent
   ],
   imports: [
     BrowserModule,
@@ -35,8 +42,10 @@ import {HttpClientModule, HttpClientJsonpModule} from '@angular/common/http';
     MatDialogModule,
     MatButtonModule,
     HttpClientModule,
-    HttpClientJsonpModule
-    
+    HttpClientJsonpModule,
+    // FormsModule
+ 
+    ReactiveFormsModule
   ],
   providers: [DetailsService],
   bootstrap: [AppComponent]

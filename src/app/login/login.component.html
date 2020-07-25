@@ -1,16 +1,16 @@
 
-<form class="example-form" formGroup="this.form">
+<form class="example-form" [formGroup]="this.details.form">
   <mat-label style="text-align: center; margin-left: 35%;">WELCOME BACK!!</mat-label><br>
   <mat-form-field class="example-full-width">
     <mat-label>Email Address</mat-label>
-    <input formControlName="name" matInput placeholder="Ex. xyz@gmail.com" type="email" required>
-    <!-- <p>{{email_val}}</p> -->
+    <input formControlName="cno" matInput placeholder="Ex. xyz@gmail.com" type="text" required>
   </mat-form-field>
 
   <mat-form-field class="example-full-width">
     <mat-label>Password</mat-label>
     <input formControlName="pass" matInput type="password" required>
+    
   </mat-form-field>
-  <button mat-raised-button style="margin-left: 40%;" (onClick)="check()">Login</button>
+  <button mat-raised-button style="margin-left: 40%;" (click)="login()">Login</button>
     
  </form>

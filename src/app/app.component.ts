@@ -14,9 +14,9 @@ export class AppComponent {
   subject: any;
 
   constructor(private detail: DetailsService){
-    let resp = this.detail.getData();
-    resp.subscribe((data) => this.subject=data);
-    console.log(this.subject);
+    // let resp = this.detail.getData();
+    // resp.subscribe((data) => this.subject=data);
+    // console.log(this.subject);
 
   }
 
