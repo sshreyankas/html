@@ -6,18 +6,20 @@ import { FormControl, FormGroup, FormControlName } from "@angular/forms";
 import { from, Subject } from 'rxjs';
 
 interface subject{
-  cno:number;
-  batch:String;
+
 }
+
 @Injectable({
   providedIn: 'root'
 })
 export class DetailsService {
 
+  flag:String;
   private baseUrl: string = '/rest/messages';
-  subject:any;
   rootURL = 'http://localhost:8080/Check12/rest/login';
 
+  obj:any;
+  subject:any;
   form = new FormGroup({
     email:new FormControl(''),
     pass: new FormControl('')
@@ -29,10 +31,11 @@ export class DetailsService {
     // let resp = this.form.value;
     console.log(data.email);
     console.log(data.pass);
-    this.subject = this.http.get<subject>(this.rootURL+who+'?cno='+data.cno+'&pass='+data.pass);
-    if(this.subject.cno!='' && this.subject.pass!='')
+    this.obj = this.http.get(this.rootURL+'?who='+who+'?cno='+data.cno+'&pass='+data.pass);
+    this.flag = JSON.parse(this.obj);
+    if(this.flag=='1')
     {
-      return 'correct';
+      console.log('correct') ;
     }
     else{
       alert('Incorrect login details');
